@@ -14,7 +14,7 @@
   <nav class="navbar fixed-top navbar-toggleable-sm">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="glyphicon glyphicon-star" aria-hidden="false">click </span>
+      <span class="glyphicon glyphicon-star" aria-hidden="true">click </span>
       </button>
       <a class="text-white navbar-brand" href="#">CAM</a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -23,10 +23,13 @@
             <a class="text-white nav-link" href="#aboutPart">About <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link" href="#">Portfolio</a>
+            <a class="text-white nav-link" href="#skillPart">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link " href="#">Contact</a>
+            <a class="text-white nav-link " href="#portfolioPart">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white nav-link " href="#contactPart">Contact</a>
           </li>
         </ul>
       </div>
@@ -43,10 +46,28 @@
   <section id=aboutPart class="p-4 row bg-warning container-fluid">
   <div class="text-center col-12 text-white">
     <h1 class="col-12">About Me</h1>
-    <img src="me.jpg" alt="Profile pic" class="mx-auto">
+    <img src="me.jpg" alt="Profile pic" class="rounded-circle mx-auto">
     <p class="col-12">Hi! My name is Cameron! I'm a self-taught Web Developer based in Austin, TX. Okay, I'm not completely self-taught. I've had the great advantage of taking an immersive coding class at Austin Coding Academy. ACA helped me learn tools such as Javascript, JQuery and React to build badass sites like this one! Check out the rest of my page to get to know me and my work a little bit better!</p>
   </div>
-    
+  </section>
+
+  <section id="skillPart" class="container-fluid">
+    <div class="row justify-content-around text-center col-12">
+      <h1 class="col-12">Skills</h1>
+      <article class="col-3">
+        <h1>Bootstrap</h1>
+        <p>I utilize the Bootstrap Framework to build repsonsive Web Apps from mobile devices on up.</p>
+      </article>
+      <article class="col-3">
+        <h1>JQuery</h1>
+        <p>Javascript and JQuery help me give interactivity and life to my websites.</p>
+      </article>
+      <article class="col-3">
+        <h1>React</h1>
+        <p>With help from React's MVC libraries I can perform two-way binding to the DOM.</p>
+      </article>
+      
+    </div>
   </section>
 
 
