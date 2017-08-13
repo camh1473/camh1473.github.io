@@ -1,17 +1,42 @@
 header {
 	text-align: center;
-  background-image: url(office.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  height: 100vh;
+	background-image: url(office.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	height: 100vh;
 }
 div {
-  min-width: 319px;
+	min-width: 319px;
 }
 
 #picture{
 	border: solid white 2px;
+	margin: 30px;
+}
+#aboutPart {
+	padding: 40px 0px 0px;
 }
 
+#skillPart {
+	padding: 40px 0px 0px;
+}
+#contactPart {
+	padding: 40px 0px 0px;
+}
+
+
+img {
+	max-width: 20%;
+	height: auto;
+	margin: 10px;
+}
+
+h1 {
+	padding-bottom: 20px;
+}
+
+.links {
+	padding-bottom: 10px;
+}
