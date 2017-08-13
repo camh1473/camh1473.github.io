@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Bootstrap site</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <nav class="navbar fixed-top navbar-toggleable-sm">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="glyphicon glyphicon-star" aria-hidden="true">click </span>
+<i class="fa fa-bars" aria-hidden="true"></i>
       </button>
       <a class="text-white navbar-brand" href="#">CAM</a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,7 +46,7 @@
   <section id=aboutPart class="p-4 row bg-warning container-fluid">
   <div class="text-center col-12 text-white">
     <h1 class="col-12">About Me</h1>
-    <img src="me.jpg" alt="Profile pic" class="rounded-circle mx-auto">
+    <img src="me.jpg" alt="Profile pic" id="picture" class="h-50 rounded-circle mx-auto">
     <p class="col-12">Hi! My name is Cameron! I'm a self-taught Web Developer based in Austin, TX. Okay, I'm not completely self-taught. I've had the great advantage of taking an immersive coding class at Austin Coding Academy. ACA helped me learn tools such as Javascript, JQuery and React to build badass sites like this one! Check out the rest of my page to get to know me and my work a little bit better!</p>
   </div>
   </section>
@@ -54,20 +54,42 @@
   <section id="skillPart" class="container-fluid">
     <div class="row justify-content-around text-center col-12">
       <h1 class="col-12">Skills</h1>
-      <article class="col-3">
+      <article class="col-12 col-md-6 col-lg-3">
         <h1>Bootstrap</h1>
         <p>I utilize the Bootstrap Framework to build repsonsive Web Apps from mobile devices on up.</p>
       </article>
-      <article class="col-3">
+      <article class="col-12 col-md-6 col-lg-3">
         <h1>JQuery</h1>
         <p>Javascript and JQuery help me give interactivity and life to my websites.</p>
       </article>
-      <article class="col-3">
+      <article class="col-12 col-md-6 col-lg-3">
         <h1>React</h1>
         <p>With help from React's MVC libraries I can perform two-way binding to the DOM.</p>
       </article>
-      
     </div>
+  </section>
+
+  <section id="contactPart" class="text-white bg-dark container-fluid">
+    <div class="row text-center col-12">
+      <h1 class="col-12">Contact Me</h1>
+    <article class="col-12 col-md-4"> 
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+      <h1>LinkedIn</h1>
+      <p></p>
+    </article>      
+    <article class="col-12 col-md-4"> 
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <h1>GitHub</h1>
+      
+      <p></p>
+    </article>      
+    <article class="col-12 col-md-4">
+     <i class="fa fa-google" aria-hidden="true"></i>
+     <h1>Gmail</h1>
+     <a href="mailto:camh1473@gmail.com">camh1473@gmail.com</a>
+   </article>      
+    </div>
+    
   </section>
 
 

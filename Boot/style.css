@@ -10,3 +10,8 @@ header {
 div {
   min-width: 319px;
 }
+
+#picture{
+	border: solid white 2px;
+}
+
