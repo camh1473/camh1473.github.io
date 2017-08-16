@@ -15,6 +15,10 @@ div {
 #picture {
   border: solid white 2px;
   margin: 30px;
+  transition: transform 500ms cubic-bezier(0,0.45,0.32,2.5);
+}
+#aboutPart:hover #picture{
+  transform: scale(1.2);
 }
 
 #aboutPart {
@@ -31,7 +35,7 @@ div {
 
 
 img {
-  max-width: 20%;
+  max-width: 15%;
   height: auto;
   margin: 10px;
 }
