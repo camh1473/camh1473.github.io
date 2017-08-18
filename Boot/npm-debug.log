@@ -1,0 +1,193 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'live-server' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose cache add [ 'live-server', null ]
+5 verbose cache add name=undefined spec="live-server" args=["live-server",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'live-server',
+6 verbose parsed url   path: 'live-server',
+6 verbose parsed url   href: 'live-server' }
+7 silly lockFile 9528180e-live-server live-server
+8 verbose lock live-server /home/chuser/.npm/9528180e-live-server.lock
+9 silly lockFile 9528180e-live-server live-server
+10 silly lockFile 9528180e-live-server live-server
+11 verbose addNamed [ 'live-server', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 180ee697-live-server live-server@
+14 verbose lock live-server@ /home/chuser/.npm/180ee697-live-server.lock
+15 silly addNameRange { name: 'live-server', range: '*', hasData: false }
+16 verbose request where is /live-server
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id b5c65af3f9d79910
+19 verbose url raw /live-server
+20 verbose url resolving [ 'https://registry.npmjs.org/', './live-server' ]
+21 verbose url resolved https://registry.npmjs.org/live-server
+22 verbose request where is https://registry.npmjs.org/live-server
+23 info trying registry request attempt 1 at 20:45:19
+24 http GET https://registry.npmjs.org/live-server
+25 http 200 https://registry.npmjs.org/live-server
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'nginx/1.10.1',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'last-modified': 'Sat, 12 Aug 2017 19:19:49 GMT',
+26 silly registry.get     etag: 'W/"598f54d5-a599"',
+26 silly registry.get     'content-encoding': 'gzip',
+26 silly registry.get     'cache-control': 'max-age=300',
+26 silly registry.get     'content-length': '9672',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Thu, 17 Aug 2017 01:44:51 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-dfw1843-DFW',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1502934291.060616,VS0,VE36',
+26 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+27 silly addNameRange number 2 { name: 'live-server', range: '*', hasData: true }
+28 silly addNameRange versions [ 'live-server',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.6.2',
+28 silly addNameRange     '0.6.3',
+28 silly addNameRange     '0.6.4',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.8.2',
+28 silly addNameRange     '0.9.0',
+28 silly addNameRange     '0.9.1',
+28 silly addNameRange     '0.9.2',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.2.0' ] ]
+29 verbose addNamed [ 'live-server', '1.2.0' ]
+30 verbose addNamed [ '1.2.0', '1.2.0' ]
+31 silly lockFile 1019340b-live-server-1-2-0 live-server@1.2.0
+32 verbose lock live-server@1.2.0 /home/chuser/.npm/1019340b-live-server-1-2-0.lock
+33 silly lockFile c7f48c5a-ive-server-live-server-1-2-0-tgz https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz
+34 verbose lock https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz /home/chuser/.npm/c7f48c5a-ive-server-live-server-1-2-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz',
+35 verbose addRemoteTarball   '4498644bbf81a66f18dd8dffdef61c4c1c374ca3' ]
+36 info retry fetch attempt 1 at 20:45:20
+37 verbose fetch to= /tmp/npm-7793-N2tzTI-y/registry.npmjs.org/live-server/-/live-server-1.2.0.tgz
+38 http GET https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz
+39 http 200 https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz
+40 silly lockFile c7f48c5a-ive-server-live-server-1-2-0-tgz https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz
+41 silly lockFile c7f48c5a-ive-server-live-server-1-2-0-tgz https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz
+42 silly lockFile 1019340b-live-server-1-2-0 live-server@1.2.0
+43 silly lockFile 1019340b-live-server-1-2-0 live-server@1.2.0
+44 silly lockFile 180ee697-live-server live-server@
+45 silly lockFile 180ee697-live-server live-server@
+46 silly resolved [ { name: 'live-server',
+46 silly resolved     version: '1.2.0',
+46 silly resolved     description: 'simple development http server with live reload capability',
+46 silly resolved     keywords: [ 'front-end', 'development', 'tool', 'server', 'http', 'cli' ],
+46 silly resolved     author: { name: 'Tapio Vierros' },
+46 silly resolved     dependencies:
+46 silly resolved      { chokidar: '^1.6.0',
+46 silly resolved        colors: 'latest',
+46 silly resolved        connect: '3.5.x',
+46 silly resolved        cors: 'latest',
+46 silly resolved        'event-stream': 'latest',
+46 silly resolved        'faye-websocket': '0.11.x',
+46 silly resolved        'http-auth': '3.1.x',
+46 silly resolved        morgan: '^1.6.1',
+46 silly resolved        'object-assign': 'latest',
+46 silly resolved        opn: 'latest',
+46 silly resolved        'proxy-middleware': 'latest',
+46 silly resolved        send: 'latest',
+46 silly resolved        'serve-index': '^1.7.2' },
+46 silly resolved     devDependencies:
+46 silly resolved      { mocha: '^3.2.0',
+46 silly resolved        supertest: '^2.0.1',
+46 silly resolved        eslint: '^3.13.0',
+46 silly resolved        jshint: '^2.9.2' },
+46 silly resolved     scripts:
+46 silly resolved      { lint: 'eslint live-server.js index.js',
+46 silly resolved        hint: 'jshint live-server.js index.js',
+46 silly resolved        test: 'mocha test && npm run lint' },
+46 silly resolved     bin: { 'live-server': './live-server.js' },
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git+https://github.com/tapio/live-server.git' },
+46 silly resolved     engines: { node: '>=0.10.0' },
+46 silly resolved     preferGlobal: true,
+46 silly resolved     license: 'MIT',
+46 silly resolved     eslintConfig: { env: [Object], rules: [Object] },
+46 silly resolved     gitHead: '6a77f048559fdeaf98ed135c04a9082ff2dfa281',
+46 silly resolved     bugs: { url: 'https://github.com/tapio/live-server/issues' },
+46 silly resolved     homepage: 'https://github.com/tapio/live-server#readme',
+46 silly resolved     _id: 'live-server@1.2.0',
+46 silly resolved     _shasum: '4498644bbf81a66f18dd8dffdef61c4c1c374ca3',
+46 silly resolved     _from: 'live-server@',
+46 silly resolved     _npmVersion: '2.15.11',
+46 silly resolved     _nodeVersion: '4.7.0',
+46 silly resolved     _npmUser: { name: 'tapio', email: 'tapiovierros@gmail.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '4498644bbf81a66f18dd8dffdef61c4c1c374ca3',
+46 silly resolved        tarball: 'https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz' },
+46 silly resolved     _npmOperationalInternal:
+46 silly resolved      { host: 'packages-18-east.internal.npmjs.com',
+46 silly resolved        tmp: 'tmp/live-server-1.2.0.tgz_1483993512038_0.9290419442113489' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/live-server/-/live-server-1.2.0.tgz' } ]
+47 info install live-server@1.2.0 into /usr/local/lib
+48 info installOne live-server@1.2.0
+49 verbose lib/node_modules/live-server unbuild
+50 verbose tar unpack /home/chuser/.npm/live-server/1.2.0/package.tgz
+51 silly lockFile a5a979dc-cal-lib-node-modules-live-server tar:///usr/local/lib/node_modules/live-server
+52 verbose lock tar:///usr/local/lib/node_modules/live-server /home/chuser/.npm/a5a979dc-cal-lib-node-modules-live-server.lock
+53 silly lockFile a1f2464b-pm-live-server-1-2-0-package-tgz tar:///home/chuser/.npm/live-server/1.2.0/package.tgz
+54 verbose lock tar:///home/chuser/.npm/live-server/1.2.0/package.tgz /home/chuser/.npm/a1f2464b-pm-live-server-1-2-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/live-server'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/live-server']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/live-server',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/live-server',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Linux 4.9.0-kali4-amd64
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "live-server"
+60 error cwd /home/chuser/Desktop/github/camh1473.github.io/Boot
+61 error node -v v0.10.40
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/live-server
+64 error fstream_path /usr/local/lib/node_modules/live-server
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/live-server'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]
