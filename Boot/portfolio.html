@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>!!*BOOTSTRAP SITE</title>
+  <!-- BOOTSTRAP 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <!-- NAV -->
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="text-white navbar-brand scroll" id="home" href="#homePart">CAM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+      <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav">
+          <li class="nav-item active">
+            <a class="text-white nav-link scroll" id="about" href="#aboutPart">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white nav-link scroll" id="skill" href="#skillPart">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white nav-link scroll" id="portfolio" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white nav-link scroll" id="contact" href="#contactPart">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- HEADER -->
+  <header id="homePart" class="container-fluid">
+    <div class="row h-100">
+      <section class="text-white col-12 my-auto">
+        <h1 class="animated rubberBand col-12" id="anime">Cameron Harmon</h1>
+        <p class="col-12 "> Javascript Wizard</p>
+      </section>
+    </div>
+  </header>
+  <!-- ABOUT -->
+  <section id="aboutPart" class="bg-warning container-fluid">
+    <div class="row">
+      <article class="text-center col-12 text-white">
+        <h1 class="col-12">Portfolio</h1>
+        <img src="me.jpg" alt="Profile pic" id="picture" class="rounded-circle mx-auto">
+        <p class="col-12">Hi! My name is Cameron! I'm a self-taught Web Developer based in Austin, TX. Okay, I'm not completely self-taught. I've had the great advantage of taking an immersive coding class at Austin Coding Academy. ACA helped me learn tools such as Javascript, JQuery and React to build badass sites like this one! Check out the rest of my page to get to know me and my work a little bit better!</p>
+      </article>
+    </div>
+  </section>
+  <!-- SKILLS -->
+  <section id="skillPart" class="container-fluid">
+    <div class="row justify-content-around text-center col-12">
+      <h1 class="col-12">Bio Part 2</h1>
+      <article class="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <video autoplay controls src="https://giant.gfycat.com/VerifiableTerrificHind.mp4" type="video/mp4"></video>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <footer id="contactPart" class="text-white bg-dark container-fluid">
+    <div class="row text-center col-12">
+      <h1 class="col-12">Contact Me</h1>
+      <!-- FOORMMMMM! -->
+      <form action="my-form-page" method="get" class="col-12 col-md-4">
+        <h1>Contact Form</h1>
+        <div>
+          <label for="name">Name:</label>
+          <input spellcheck="true" type="text" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_name">
+        </div>
+        <div>
+          <label for="pwd">Password:</label>
+          <strong><abbr title="required">*</abbr></strong>
+          <input type="password" id="pwd" name="pwd">
+        </div>
+        <div>
+          <label for="msg">Message:</label>
+          <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Send your Message</button>
+          <button type="reset">Reset</button>
+        </div>
+        <fieldset>
+          <legend>Coding Expertise Level</legend>
+          <div>
+            <label for="level_1">Beginner</label>
+            <input type="radio" name="code_lvl_1" id="level_1" value="Beginner">
+            <label for="level_2">Intermediate</label>
+            <input type="radio" name="code_lvl_1" id="level_2" value="Intermediate">
+          </div>
+          <p>
+            <label for="level_3">Advanced</label>
+            <input type="checkbox" id="level_3" name="code_lvl_3" value="Intermediate">
+          </p>
+          <p>
+            <label for="level_4">Expert</label>
+            <input type="range" name="code_level_4" id="level_4" min="0" max="10" step="2">
+            <span class="codelevel"></span>
+          </p>
+        </fieldset>
+      </form>
+      <article class="col-12 col-md-4">
+        <a href="https://github.com/camh1473" target="_blank"><i class="fa fa-github fa-3x links" aria-hidden="true"></i></a>
+      </article>
+      <article class="col-12 col-md-4">
+        <a href="mailto:camh1473@gmail.com" "><i class="fa fa-google fa-3x links " aria-hidden="true "></i></a>
+     <p>camh1473@gmail.com</p>
+   </article>      
+    </div>
+  </footer>
+<!-- BS4 -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 " crossorigin="anonymous "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 " crossorigin="anonymous "></script>
+
+<!-- JQ -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js "
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin=" anonymous "></script>
+
+  <script src="jaq.js "></script>
+  <!-- 
+  <script type="text/javascript "><!-- 
+    var codelevel = document.querySelector("#level_3 ");
+    var count = document.querySelector(".codelevel ");
+
+    count.textContent = codelevel.value;
+
+    codelevel.oninput = function(){
+      count.textContent = codelevel.value;
+    }
+
+  </script> --> -->
+
+</body>
+
+</html>
