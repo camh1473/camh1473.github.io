@@ -6,59 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Food Site</title>
   <link rel="stylesheet" href="food.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 
-<body>
+<body id="wrapper">
   <!-- NAVBAR -->
-  <nav class="wrapper">
-    <div class="home">
-      <a href="#" class="navLink">Home</a>
+  <nav class="navWrapper">
+    <a href="#" id="navLogo"><img src="coat4x4.png" height="40px" width="40px" alt="Coat and Thai"></a>
+    <ul id="navList" class="hide">
+      <li id="menu"><a href="#" class="navLink">Menu</a></li>
+      <li id="about"><a href="#" class="navLink">About</a></li>
+      <li id="contact"><a href="#" class="navLink">Contact</a></li>
+    </ul>
+    <div>
+    <div class="handle">
+      <div class="line-menu half start"></div>
+      <div class="line-menu"></div>
+      <div class="line-menu half end"></div>
     </div>
-
-    <div class="logo">
-      <a href="" class="navLogo"><img src="coat4x4.png" height="40px" width="40px" alt="Coat and Thai"></a>
     </div>
-
-    <div class="about">
-      <a href="#" class="navLink">About</a>
-    </div>
-
   </nav>
   <!-- Intro -->
-  <div class="container-fluid">
-    <div class="row">
-      <header class="col-12">
-        <img id="slide" width="100%" height="100%">
+      <header id="hero">
+        <img id="slide" src="busyDay.jpg">
       </header>
-    </div>
-  </div>
   <!-- Menu; footer slides up upon scroll and sticks -->
-  <div class="container">
-    <div class="row">
-      <section class="col-12">
-        <h1 class="text-center">Menu</h1>
-        <img src="menu.jpg" alt="Menu">
+  
+      <section id="menuSec">
+        <h1> Menu</h1>
+        <img id src="menu.jpg" alt="Menu">
       </section>
-    </div>
-  </div>
+    
   <!-- About Section -->
-  <div class="container text-white bg-success mt-5">
-    <div class="row">
-      <section class="col-12">
-        <h1 class="text-center">About</h1>
-        <h2>Lately dubbed the Best Thai Food Trailer in Austin by Lazy Smurf's Guide to Life - Vegan Food in Austin TX, and is currently Number 2 in CitySearch - Best Thai Food period.</h2>
+
+      <section id="abtWrapper">
+        <h1>About</h1>
+        <h2> Welcome to Coat and Thai! We make all of our food fresh on site with dedication and love. We beleive in fresh and local sourcing for our ingredients. Lately dubbed the Best Thai Food Trailer in Austin by Lazy Smurf's Guide to Life - Vegan Food in Austin TX, and is currently Number 2 in CitySearch - Best Thai Food period.</h2>
       </section>
-    </div>
-  </div>
+   
   <!-- Sticky footer after scrolling past Header. -->
-  <div class="container mt-5">
-    <footer class="row justify-content-around align-items-center">
-      <div class="col-4 text-center">
-        <h1>512-970-2154</h1>
-      </div>
-      <div class="col-4 text-center">
+ 
+    <footer id="footSec">
+      
+        <h1 id="hdr">Contact Us</h1>
+        <h1 id="nmbr"><a href="tel:1-512-970-2154">512-970-2154</a></h1>
+     
+      <div id="addy">
         <h1>Address</h1>
         <p>
           1720 Barton Springs Rd.
@@ -67,7 +60,7 @@
           <br> 78702
         </p>
       </div>
-      <div class="col-4 text-center">
+      <div id="hrs">
         <h1>Hours</h1>
         <table>
           <tbody>
@@ -102,17 +95,14 @@
           </tbody>
         </table>
       </div>
-      <div class="col-12 text-center">
+      <div id="copy">
         <p>
           Copyright &copy; 2017. All rights reserved.
         </p>
       </div>
     </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <!-- <script src="food.js"></script> -->
+
+  <script src="food.js"></script>
 </body>
 
 </html>

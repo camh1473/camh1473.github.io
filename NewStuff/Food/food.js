@@ -1,53 +1,29 @@
-$(document).ready(function(){
-	"use strict";
-	setBindings();
-})
+  "use strict";
 
-var links = $("nav a")
-var link1 = document.getElementById("guide")
-var linkz = document.getElementsByClassName("nav-link")
-var link = document.querySelectorAll("nav a")
+// Menu Icon Animation
+var wrapperMenu = document.querySelector(".handle");
 
-// setup of carousel
-var i = 0;
-var images = [];
-var time = 3000;
-// image list
-images[0] = 'curry.jpg';
-images[1] = 'busyDay.jpg';
-images[2] = 'eggsRolls.jpg';
-// change image
-function  changeImg(){
-var pics = document.getElementById("slide");
-pics.src = images[i];
-
-if(i < images.length-1){
-  i++;
-}else {
-  i=0
+function iconAni(){
+wrapperMenu.addEventListener("click", function() {
+  wrapperMenu.classList.toggle("open");
+});
 }
 
-setTimeout("changeImg()", time);
-};
+// // show and hide navList
 
-function changeColor(){
-	links.innerHTML="HotSHIT!";
-};
+var navToggle = document.querySelector(".handle");
+var showMe = document.getElementById("navList");
 
-window.onload = changeImg ;
-
-// setBindgins function
-function setBindings() {
-  link1.click(function(e){
-    e.preventDefault();
-    var sectionPart = "#" + e.currentTarget.id + "Part";
-
-alert("hault");
-    // $('html body').animate({
-    //   scrollTop: $(sectionPart).offset().top
-    // }, 1000)
-    
-  })
-
-// last closing tag
+function hideList(){
+  navToggle.addEventListener("click", () =>
+    showMe.classList.toggle("hide"));
 }
+
+
+//  FUNCTION CALLS
+hideList();
+iconAni();
+ 
+
+
+
