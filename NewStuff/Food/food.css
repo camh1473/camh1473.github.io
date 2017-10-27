@@ -24,6 +24,7 @@ big,
 cite,
 code,
 del,
+div,
 dfn,
 em,
 img,
@@ -90,9 +91,16 @@ video {
 }
 
 
+
+
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
+div,
 aside,
 details,
 figcaption,
@@ -134,10 +142,14 @@ table {
 }
 
 
-/*MOBILE STYLING*/
+
+
+
+
+/*****MOBILE STYLING******/
 
 nav ul li {
-  padding: 15px;
+  padding: 30px 0px;
   list-style: none;
   width: 100%;
   text-align: center;
@@ -147,6 +159,8 @@ nav ul li {
 nav ul li a {
   color: black;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 nav a:hover {
@@ -161,14 +175,14 @@ nav a:hover {
 /*NAV ALIGNMENT*/
 
 .navWrapper {
+  background-color: #bcee7f;
   grid-area: navvy;
-  background-color: white;
-  padding-top: 10px;
+  padding: 0px;
+  margin: 0;
   font-family: 'Poiret One', sans-serif;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "handle logo ." ". nav .";
-  ;
 }
 
 
@@ -186,15 +200,20 @@ nav a:hover {
   grid-area: contact;
 }
 
+
 #navLogo {
   width: 100%;
   padding: 0px;
   grid-area: logo;
   text-align: center;
+  padding-top: 5px;
+  margin-top: 10px;
 }
 
-#navLogo img {
-  align-content: center;
+
+#logoLg,
+.menuHideHdr {
+  display: none;
 }
 
 #navList {
@@ -204,12 +223,14 @@ nav a:hover {
   grid-area: nav;
 }
 
-/*menu icon*/
+
+
+/*Nav icon*/
 
 .handle {
+  margin: 6px;
   width: 50px;
   height: 50px;
-  /*background: lightgray;*/
   box-sizing: border-box;
   padding: 8px;
   cursor: pointer;
@@ -220,17 +241,15 @@ nav a:hover {
   transition: transform 330ms ease-out;
 }
 
-
-
 .handle.open {
   transform: rotate(-45deg);
 }
 
 .line-menu {
-  background-color: #0e2618;
-  border-radius: 5px;
+  background-color: white;
+  /*border-radius: 5px;*/
   width: 100%;
-  height: 6px;
+  height: 5px;
 }
 
 .line-menu.half {
@@ -257,41 +276,223 @@ nav a:hover {
 }
 
 
-/*hero Image*/
-
-#slide {
-  grid-area: slide;
-  max-width: 100%;
-}
+/*HERO Image*/
 
 #hero {
   grid-area: main;
+  background-image: url("busyDay.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "slide";
+  align-items:  center;
+  justify-content: center;
+}
+
+#hero>h1{
+  color: #bcee7f;
+  text-transform: uppercase;
+  font-size: 37px;
+  font-weight: 400;
+  font-family: "Source sans pro";
 }
 
 
-/*MENU SECTION*/
+/*MENU Parralax SECTION*/
+
+#innerMenu ul {
+  padding: 10px;
+}
+
+#appScroll {
+  grid-area: appScroll;
+  background-image: url("eggsRolls.jpg");
+  height: 400px;
+  background-position: center;
+  z-index: -10;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  /*position: fixed;*/
+}
+
+#hdrEntree{
+  grid-area: hdrE;
+}
+
+#descEntree{
+  grid-area: descE;
+}
+
+#entreeScroll {
+  grid-area: entreeScroll;
+  background-image: url("entree.jpg");
+  height: 400px;
+  background-position: center;
+  z-index: -10;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  grid-template-rows: repeat(5,1fr);
+  grid-template-areas: "." "." "hdrE" "descE" ".";
+}
+
+#descNoodles{
+  grid-area: descN;
+}
+
+#hdrNoodles{
+  grid-area: hdrN;
+}
+
+#noodleScroll {
+  grid-area: noodleScroll;
+  background-image: url("padThai.jpg");
+  height: 400px;
+  background-position: center;
+  z-index: -10;
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(5,1fr) ;
+  grid-template-areas: "."".""hdrN""descN"".";
+}
+
+#hdrRice{
+  grid-area: hdrR;
+}
+
+#descRice{
+  grid-area: descR;
+}
+
+#riceScroll {
+  grid-area: riceScroll;
+  background-image: url("rice.jpg");
+  height: 400px;
+  background-position: center;
+  z-index: -10;
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(5,1fr);
+  grid-template-areas: "." "." "hdrR" "descR" "." ;
+}
+
+#hdrCurry{
+  grid-area: hdrC;
+}
+
+#descCurry{
+  grid-area: descC;
+}
+
+#curryScroll {
+  grid-area: curryScroll;
+  background-image: url("curry.jpg");
+  height: 400px;
+  background-position: center;
+  z-index: -10;
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(5,1fr);
+  grid-template-areas:"." "." "hdrC" "descC" ".";
+}
+
+
+/*                  Food Menu Styling*/
+
+.menuHide{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#apps {
+  grid-area: apps;
+}
+
+#entree {
+  grid-area: entree;
+}
+
+#noodles {
+  grid-area: noodles;
+}
+
+#rice {
+  grid-area: rice;
+}
+
+#curry {
+  grid-area: curry;
+}
+
+#drinks {
+  grid-area: drinks;
+}
 
 #menuSec {
   grid-area: prices;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "h1" " menuImg ";
+  grid-template-areas: "inner";
 }
 
 #menuSec h1 {
   grid-area: h1;
-  text-align: center;
   font-weight: bold;
+  font-size: 3em;
 }
 
-#menuSec img {
-  grid-area: menuImg;
-  max-width: 100%;
-  justify-self: center;
+.foodCourse {
+  font-size: 1.5em;
+  text-decoration: underline;
 }
+
+.imgHdr {
+  font-family: "Source Sans Pro";
+  text-decoration: none;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: white;
+  font-size: 37px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.imgP{
+  text-transform: none;
+  font-size: 20px;
+  color: white;
+  display: table-cell;
+  padding: 5px;
+  /*vertical-align: middle;*/
+  /*justify-content: center;  */
+}
+
+
+#menuSec h4,
+h5 {
+  font-weight: bold;
+  padding: 10px;
+}
+
+#innerMenu {
+  grid-area: inner;
+  display: grid;
+  grid-template-areas: 1fr;
+  grid-template-areas: "h1" "apps" "appScroll" "entree" "rice" "noodles" "curry" "drinks";
+  background-color: #bcee7f;
+  text-align: center;
+}
+
+
+
+/*slider*/
+
+#slider {
+  display: none;
+}
+
 
 
 /*ABOUT SECTION*/
@@ -299,15 +500,18 @@ nav a:hover {
 #abtWrapper {
   grid-area: abtUs;
   display: grid;
-  grid-template-columns: 40% 1fr 40%;
-  grid-template-areas: ". abt ." "info info info";
+  grid-template-columns: 1fr;
+  grid-template-areas: "abt" "info";
+  padding: 30px;
+  margin: 0px;
 }
 
 #abtWrapper h1 {
   grid-area: abt;
   text-align: center;
   font-weight: bold;
-  padding: 10px 0;
+  padding: 10px;
+  font-size: 2em;
 }
 
 #abtWrapper h2 {
@@ -319,10 +523,19 @@ nav a:hover {
 /*FOOTER*/
 
 #footSec {
+  background-color: #efefef;
   grid-area: ftr;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "hdr" "nmbr" "addy " "hours" "copy";
+  grid-template-areas: "hdr" "nmbr" "addy " "map" "hours" "copy";
+}
+
+#map {
+  grid-area: map;
+  width: 80%;
+  height: 400px;
+  background-color: grey;
+  justify-self: center;
 }
 
 
@@ -369,8 +582,6 @@ nav a:hover {
 }
 
 
-
-
 /*FULL LAYOUT*/
 
 #wrapper {
@@ -380,51 +591,198 @@ nav a:hover {
 }
 
 
-/*iPads*/
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .navWrapper {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "menu logo nav ";
-  }
-  .handle {
+
+
+
+
+
+
+
+/********iPads - ipad PRO*****/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1025px) {
+  .handle,
+  .menuHideHdr,
+  #logoSm {
     display: none;
+  }
+  /*NAVIGATION*/
+  .navWrapper {
+    grid-template: "logo nav" minmax(60px, auto) / 1fr 1fr;
   }
 
   #navList {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "menu contact about"
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-areas: "about menu contact"
+  }
+
+  #logoLg {
+    display: block;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    padding: 10px 25px;
+  }
+  /*SLIDESHOW*/
+  #slider {
+    display: none;
+  }
+
+  /*FULL LAYOUT*/
+  #wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "navvy" "main" "abtUs" "prices" "ftr";
   }
 }
 
 
-/*Desktop and Laptop*/
 
-@media only screen and (min-width: 1224px) {
 
-  nav a:hover {
+
+
+
+/*******Desktop and Laptop******/
+
+@media only screen and (min-width: 1025px) {
+  .imageSm,
+  .menuHide,
+  #appScroll,
+  #riceScroll,
+  #curryScroll,
+  #noodleScroll,
+  #entreeScroll {
+    display: none;
+  }
+  /*NAVIGATION*/
+  nav li a:hover {
     background-image: url("flower.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding: 15px;
-  }
-
-  #handle {
-    display: none;
+    color: black;
   }
 
   #navList {
-    max-height: 100%;
     display: grid;
     grid-template: "menu about contact" minmax(100px, auto) / 1fr 1fr 1fr;
   }
 
   .navWrapper {
+    padding: 0px 200px;
     grid-template: "logo nav" minmax(100px, auto) /1fr 1fr;
+    height: 100px;
+  }
+
+  #logoSm {
+    display: none;
+  }
+
+  #logoLg {
+    display: block;
+    width: auto;
+    height: 70%;
+  }
+
+  .handle {
+    display: none;
+  }
+
+  /*LANDING HERO*/
+  #hero {
+    height: 700px;
+  }
+  /*ABOUT SECTION*/
+  #abtWrapper {
+    padding: 20px 200px;
+  }
+
+
+  /*slideshow*/
+  #slider {
+    grid-area: slider;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "prevBtn nextBtn";
+    box-sizing: border-box;
+    /*border: solid white 5px; */
+    box-shadow: 6px 3px 3px black;
+  }
+
+  #slider>.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  #nextImg {
+    grid-area: nextBtn;
+    align-self: center;
+    justify-self: end;
+  }
+
+  #prevImg {
+    grid-area: prevBtn;
+    align-self: center;
+  }
+
+  /*FOOD MENU*/
+  .menuHideHdr {
+    display: block;
+  }
+
+  #menuSec {
+    grid-area: prices;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas: ". inner .";
+    padding: 30px 0;
+  }
+
+  #innerMenu {
+    grid-area: inner;
+    display: grid;
+    grid-template-areas: repeat( 5, 1fr);
+    grid-template-areas: ". . h1 . ." "apps apps . entree entree" "rice rice . entree entree" "noodles noodles . curry curry" ". drinks drinks drinks .";
+    background-color: #bcee7f;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #footSec {
+    padding: 0px 200px;
+    grid-area: ftr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hdr hdr" "nmbr hours" "map addy" "copy copy";
+  }
+
+  #addy,
+  #nmbr {
+    align-self: center;
+  }
+  /*FULL LAYOUT*/
+  #wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas: "navvy navvy navvy" "main main main" "abtUs abtUs abtUs" ". slider ." "prices prices prices" "ftr ftr ftr";
   }
 }
+
 
 footer,
 #abtWrapper,
