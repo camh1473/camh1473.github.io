@@ -19,6 +19,23 @@
       showMe.classList.toggle("hide"));
   }
 
+  // smooth scrolling navList
+  var menu = document.getElementById('menu');
+  menu.addEventListener = ("click",scrollMe())
+  var about = document.getElementById('about');
+  about.addEventListener = ("click",scrollMe())
+  var contact = document.getElementById('contact');
+  contact.addEventListener = ("click",scrollMe())
+  
+// var marginY = 0;
+// var where = 0;
+// var speed = 5;
+function scrollMe(elelmentId){
+  var where = document.getElementById(elelmentId);
+  console.log(where);
+  }
+
+
   // Map Initialization
   function initMap() {
     var uluru = { lat: 30.263481, lng: -97.7628586 };
@@ -47,7 +64,9 @@
   images[1] = "eggsRolls.jpg";
   images[2] = "truck.jpg";
   images[3] = "nina.jpg";
-  images[4] = "entree.jpg";
+  images[4] = "phad.jpg";
+  images[5] = "padPeanut.jpg";
+  images[6] = "redCurry.jpg";
 
   // Change image
   function changeImg() {
@@ -86,44 +105,44 @@
   }
 
 
-// fade
-var fadeInFrom = 0;
-var fadeOutFrom = 10;
+// // fade
+// var fadeInFrom = 0;
+// var fadeOutFrom = 10;
 
-function fadeIn(slider){
-  slider.style.display = "grid";
-  var newSetting = fadeInFrom /10;
-  slider.style.opacity =  newSetting;
+// function fadeIn(slider){
+//   slider.style.display = "grid";
+//   var newSetting = fadeInFrom /10;
+//   slider.style.opacity =  newSetting;
 
-  fadeInFrom++;
-  if(fadeInFrom == 10) {
-  slider.style.opacity = 1;
-  clearTimeout(loopTimer);
-  fadeInFrom = 0;
-  return false;
-  }
+//   fadeInFrom++;
+//   if(fadeInFrom == 10) {
+//   slider.style.opacity = 1;
+//   clearTimeout(loopTimer);
+//   fadeInFrom = 0;
+//   return false;
+//   }
 
-  var loopTimer = setTimeout("fadeIn(/"+slider+"/)",50);
-}
+//   var loopTimer = setTimeout("fadeIn(/"+slider+"/)",50);
+// }
 
-function fadeOut(slider){
-  // slider.style.display = "grid";
-  var newSetting = fadeInFrom /10;
-  slider.style.opacity =  newSetting;
+// function fadeOut(slider){
+//   // slider.style.display = "grid";
+//   var newSetting = fadeInFrom /10;
+//   slider.style.opacity =  newSetting;
 
-  fadeOutFrom--;
-  if(fadeInFrom == 0) {
-  slider.style.opacity = 0;
-  slider.style.display = "none";
-  clearTimeout(loopTimer);
-  fadeInFrom = 10;
-  return false;
-  }
+//   fadeOutFrom--;
+//   if(fadeInFrom == 0) {
+//   slider.style.opacity = 0;
+//   slider.style.display = "none";
+//   clearTimeout(loopTimer);
+//   fadeInFrom = 10;
+//   return false;
+//   }
 
 
-  var loopTimer = setTimeout("fadeOut(/"+slider+"/)",50);
+//   var loopTimer = setTimeout("fadeOut(/"+slider+"/)",50);
 
-}
+// }
 
 
   //  FUNCTION CALLS

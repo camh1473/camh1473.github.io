@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Food Site</title>
+  <title>Coat and Thai</title>
   <link rel="stylesheet" href="food.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Poiret+One|Raleway|Damion|Montserrat|Khula:800" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="wrapper">
   <!-- NAVBAR -->
   <nav class="navWrapper">
     <div id="navLogo">
-      <img src="coat4x4.png" id="logoSm" height="40px" width="40px" alt="Small logo">
-      <img src="coat4x16.jpg" id="logoLg" alt="Large logo">
+      <img src="coat4x16.jpg" id="logoLg" alt="Large logo" />
     </div>
     <ul id="navList" class="hide">
       <li id="menu"><a href="#menuSec" class="navLink">Menu</a></li>
-      <li id="about"><a href="#abtWrapper" class="navLink">About</a></li>
+      <li id="about"><a href="#abtWrapper" class="navLink">About Us</a></li>
       <li id="contact"><a href="#footSec" class="navLink">Contact</a></li>
     </ul>
-    <div>
+    <div id="handler">
       <div class="handle">
         <div class="line-menu half start"></div>
         <div class="line-menu"></div>
@@ -31,25 +31,29 @@
   </nav>
   <!-- Intro -->
   <header id="hero">
-    <h1>Coat and Thai × Curbside Kitchen</h1>
-    <!-- <img id="slide" src="busyDay.jpg"> -->
+    <h1>Coat and Thai <br>× Austin TX ×</h1>
   </header>
   <!-- About Section -->
   <section id="abtWrapper">
-    <h1>About</h1>
-    <h2> Welcome to Coat and Thai! We make all of our food fresh on site with dedication and love. We beleive in fresh and local sourcing for our ingredients. Lately dubbed the Best Thai Food Trailer in Austin by Lazy Smurf's Guide to Life - Vegan Food in Austin TX, and is currently Number 2 in CitySearch - Best Thai Food period.</h2>
+    <h1 id="abtHdr"><span id="cursive">Coat &</span> <span id="redTxt">Thai</span>, curb-side kitchen.</h1>
+    <p> Welcome to Coat and Thai, Austin's best authentic Thai restaurant. Founded in 2008 by Owner/Chef Nina with fresh ingredients and authenticity in mind. Coat and Thai is located on Barton Springs Road and has been named Best Thai Food Trailer in Austin by Lazy Smurf's Guide to Life.</p>
+    <div id="social">
+      <h1 id="sclHdr">Connect With Us</h1>
+      <a href="https://www.facebook.com/Coatandthai/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+</a>
+    </div>
   </section>
   <!-- Menu; footer slides up upon scroll and sticks -->
   <section id="menuSec">
     <div id="innerMenu">
-      <h1> Menu</h1>
+      <img src="coat4x16.jpg" id="MenuTitle" alt="Large logo" />
       <article id="apps">
         <div class="menuHide" id="appScroll">
-          <h4 class="imgHdr">Appetizers $4</h4>
+          <h2 class="imgHdr">Appetizers $4</h2>
         </div>
         <ul>
           <li>
-            <h4 class="foodCourse menuHideHdr">Appetizers $4</h4>
+            <h2 class="foodCourse menuHideHdr">Appetizers $4</h2>
             <h4>Egg Roll (4)</h4>
             <p>deep-fried homemade egg roll stuffed with cabbage, clear noodles, carrots, celery and onions. served with sweet & sour sauce</p>
           </li>
@@ -73,13 +77,13 @@
       </article>
       <article id="entree">
         <div class="menuHide" id="entreeScroll">
-          <h4 id="hdrEntree" class="imgHdr">Entrees $9</h4>
+          <h2 id="hdrEntree" class="imgHdr">Entrees $9</h2>
           <p id="descEntree" class="imgP">served with rice, your choice of chicken, beef, or tofu (Shrimp + $1)</p>
         </div>
         <ul>
           <li>
-            <h4 class="foodCourse menuHideHdr">Entrees $9</h4>
-            <p class="menuHideHdr">served with rice, your choice of chicken, beef, or tofu (Shrimp + $1)</p>
+            <h2 class="foodCourse menuHideHdr">Entrees $9</h2>
+            <p class="menuHideHdr">served with rice, your choice of chicken, beef, or tofu <br/>(Shrimp + $1)</p>
           </li>
           <li>
             <h4>Pad Ka-Pao</h4>
@@ -113,13 +117,13 @@
       </article>
       <article id="noodles">
         <div class="menuHide" id="noodleScroll">
-          <h4 id="hdrNoodles" class="imgHdr">Noodles $9</h4>
+          <h2 id="hdrNoodles" class="imgHdr">Noodles $9</h2>
           <p id="descNoodles" class="imgP">with choice of chicken, beef, or tofu (shrimp + $1)</p>
         </div>
         <ul>
           <li>
-            <h4 class="foodCourse menuHideHdr">Noodles $9</h4>
-            <p class="menuHideHdr">with choice of chicken, beef, or tofu (shrimp + $1)</p>
+            <h2 class="foodCourse menuHideHdr">Noodles $9</h2>
+            <p class="menuHideHdr">with choice of chicken, beef, or tofu <br/> (shrimp + $1)</p>
           </li>
           <li>
             <h4>Pad Thai</h4>
@@ -137,13 +141,13 @@
       </article>
       <article id="rice">
         <div class="menuHide" id="riceScroll">
-          <h4 id="hdrRice" class="imgHdr">Rice $9</h4>
+          <h2 id="hdrRice" class="imgHdr">Rice $9</h2>
           <p id="descRice" class="imgP">cooked with choice of chicken, beef, or tofu (shrimp + $1)</p>
         </div>
         <ul>
           <li>
-            <h4 class="foodCourse menuHideHdr">Rice $9</h4>
-            <p class="menuHideHdr">cooked with choice of chicken, beef, or tofu (shrimp + $1)</p>
+            <h2 class="foodCourse menuHideHdr">Rice $9</h2>
+            <p class="menuHideHdr">cooked with choice of chicken, beef, or tofu <br/> (shrimp + $1)</p>
           </li>
           <li>
             <h4>Thai Fried Rice</h4>
@@ -161,13 +165,13 @@
       </article>
       <article id="curry">
         <div class="menuHide" id="curryScroll">
-          <h4 id="hdrCurry" class="imgHdr">Curries $9</h4>
+          <h2 id="hdrCurry" class="imgHdr">Curries $9</h2>
           <p id="descCurry" class="imgP">cooked with rice and choice of chicken, beef, or tofu (shrimp + $1)
         </div>
         <ul>
           <li>
-            <h4 class="foodCourse menuHideHdr">Curries $9</h4>
-            <p class="menuHideHdr">cooked with rice and choice of chicken, beef, or tofu (shrimp + $1)</p>
+            <h2 class="foodCourse menuHideHdr">Curries $9</h2>
+            <p class="menuHideHdr">cooked with rice and choice of chicken, beef, or tofu <br/>(shrimp + $1)</p>
           </li>
           <li>
             <h4>Yellow Curry</h4>
@@ -265,7 +269,7 @@
     </div>
     <div id="copy">
       <p>
-        Copyright &copy; Cameron Harmon 2017. All rights reserved.
+        Copyright &copy; THE Web Design Austin 2017. All rights reserved.
       </p>
     </div>
   </footer>

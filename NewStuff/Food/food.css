@@ -97,6 +97,10 @@ video {
 
 
 
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -146,6 +150,10 @@ table {
 
 
 
+
+
+
+
 /*****MOBILE STYLING******/
 
 nav ul li {
@@ -172,18 +180,27 @@ nav a:hover {
 }
 
 
+
+
+
+
 /*NAV ALIGNMENT*/
 
 .navWrapper {
+  position: fixed;
   background-color: #bcee7f;
   grid-area: navvy;
   padding: 0px;
   margin: 0;
   font-family: 'Poiret One', sans-serif;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "handle logo ." ". nav .";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "logo logo logo logo handle" ". . nav . .";
 }
+
+
+
+
 
 
 /*NAV GRID DEFS*/
@@ -201,6 +218,7 @@ nav a:hover {
 }
 
 
+
 #navLogo {
   width: 100%;
   padding: 0px;
@@ -211,9 +229,16 @@ nav a:hover {
 }
 
 
-#logoLg,
 .menuHideHdr {
   display: none;
+}
+
+#logoLg {
+  display: block;
+  width: 78%;
+  height: auto;
+  justify-content: center;
+  padding: 0px 0px 10px 25px;
 }
 
 #navList {
@@ -225,20 +250,36 @@ nav a:hover {
 
 
 
+
+
+
+
 /*Nav icon*/
 
-.handle {
-  margin: 6px;
-  width: 50px;
-  height: 50px;
+#handler {
+  align-self: center;
+  justify-self: center;
+  /*border: red solid 1px;*/
   box-sizing: border-box;
-  padding: 8px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.handle {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
   cursor: pointer;
   grid-area: handle;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform 330ms ease-out;
+  /*border: 1px black solid;*/
+  vertical-align: center;
 }
 
 .handle.open {
@@ -247,7 +288,7 @@ nav a:hover {
 
 .line-menu {
   background-color: white;
-  /*border-radius: 5px;*/
+  border-radius: 5px;
   width: 100%;
   height: 5px;
 }
@@ -276,6 +317,10 @@ nav a:hover {
 }
 
 
+
+
+
+
 /*HERO Image*/
 
 #hero {
@@ -286,17 +331,31 @@ nav a:hover {
   height: 50vh;
   width: 100%;
   display: grid;
-  align-items:  center;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#hero>h1{
+#hero>h1 {
   color: #bcee7f;
   text-transform: uppercase;
   font-size: 37px;
-  font-weight: 400;
-  font-family: "Source sans pro";
+  font-family: "Khula", sans-serif;
 }
+
+#cursive {
+  font-family: "Damion";
+  font-weight: lighter;
+}
+
+#redTxt {
+  color: red;
+  text-shadow: 2px 1px 0px white, 3px 2px 0px black;
+  font-family: "Khula";
+}
+
+
+
+
 
 
 /*MENU Parralax SECTION*/
@@ -305,9 +364,14 @@ nav a:hover {
   padding: 10px;
 }
 
+#innerMenu ul li p {
+  font-family: "sans-serif";
+  font-weight: lighter;
+}
+
 #appScroll {
   grid-area: appScroll;
-  background-image: url("eggsRolls.jpg");
+  background-image: url("springRoll.jpg");
   height: 400px;
   background-position: center;
   z-index: -10;
@@ -317,91 +381,97 @@ nav a:hover {
   /*position: fixed;*/
 }
 
-#hdrEntree{
+#hdrEntree {
   grid-area: hdrE;
 }
 
-#descEntree{
+#descEntree {
   grid-area: descE;
 }
 
 #entreeScroll {
   grid-area: entreeScroll;
-  background-image: url("entree.jpg");
+  background-image: url("padPeanut.jpg");
   height: 400px;
   background-position: center;
   z-index: -10;
   display: grid;
   align-items: center;
   width: 100%;
-  grid-template-rows: repeat(5,1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas: "." "." "hdrE" "descE" ".";
 }
 
-#descNoodles{
+#descNoodles {
   grid-area: descN;
 }
 
-#hdrNoodles{
+#hdrNoodles {
   grid-area: hdrN;
 }
 
 #noodleScroll {
   grid-area: noodleScroll;
-  background-image: url("padThai.jpg");
+  background-image: url("phad.jpg");
   height: 400px;
   background-position: center;
   z-index: -10;
   display: grid;
   width: 100%;
-  grid-template-rows: repeat(5,1fr) ;
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas: "."".""hdrN""descN"".";
 }
 
-#hdrRice{
+#hdrRice {
   grid-area: hdrR;
 }
 
-#descRice{
+#descRice {
   grid-area: descR;
 }
 
 #riceScroll {
   grid-area: riceScroll;
-  background-image: url("rice.jpg");
+  background-image: url("friedRice.jpg");
   height: 400px;
   background-position: center;
   z-index: -10;
   display: grid;
   width: 100%;
-  grid-template-rows: repeat(5,1fr);
-  grid-template-areas: "." "." "hdrR" "descR" "." ;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "." "." "hdrR" "descR" ".";
 }
 
-#hdrCurry{
+#hdrCurry {
   grid-area: hdrC;
 }
 
-#descCurry{
+#descCurry {
   grid-area: descC;
 }
 
 #curryScroll {
   grid-area: curryScroll;
-  background-image: url("curry.jpg");
+  background-image: url("redCurry.jpg");
   height: 400px;
   background-position: center;
   z-index: -10;
   display: grid;
   width: 100%;
-  grid-template-rows: repeat(5,1fr);
-  grid-template-areas:"." "." "hdrC" "descC" ".";
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "." "." "hdrC" "descC" ".";
 }
+
+
+
+
 
 
 /*                  Food Menu Styling*/
 
-.menuHide{
+
+
+.menuHide {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -430,6 +500,11 @@ nav a:hover {
   grid-area: drinks;
 }
 
+#drinks li {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
 #menuSec {
   grid-area: prices;
   display: grid;
@@ -437,11 +512,30 @@ nav a:hover {
   grid-template-areas: "inner";
 }
 
-#menuSec h1 {
-  grid-area: h1;
-  font-weight: bold;
-  font-size: 3em;
+
+#innerMenu img {
+  grid-area: logo;
+  padding: 30px 0px;
+  align-self: center;
+  width: 70%;
+  justify-self: center;
 }
+
+#innerMenu p {
+  /*font-family: "Montserrat";*/
+  padding-bottom: 15px;
+   color: #404040;
+}
+
+#innerMenu {
+  grid-area: inner;
+  display: grid;
+  grid-template-areas: 1fr;
+  grid-template-areas: "logo" "apps" "appScroll" "entree" "rice" "noodles" "curry" "drinks";
+  background-color: #bcee7f;
+  text-align: center;
+}
+
 
 .foodCourse {
   font-size: 1.5em;
@@ -459,40 +553,30 @@ nav a:hover {
   vertical-align: middle;
 }
 
-.imgP{
+.imgP {
   text-transform: none;
   font-size: 20px;
   color: white;
   display: table-cell;
   padding: 5px;
-  /*vertical-align: middle;*/
-  /*justify-content: center;  */
+}
+
+#menuSec h2 {
+  font-size: 3em;
+  font-weight: bold;
+  padding-bottom: 7px;
 }
 
 
-#menuSec h4,
-h5 {
+#menuSec h5 {
   font-weight: bold;
   padding: 10px;
 }
 
-#innerMenu {
-  grid-area: inner;
-  display: grid;
-  grid-template-areas: 1fr;
-  grid-template-areas: "h1" "apps" "appScroll" "entree" "rice" "noodles" "curry" "drinks";
-  background-color: #bcee7f;
-  text-align: center;
+#menuSec h4 {
+  font-size: 2em;
+  padding: 10px;
 }
-
-
-
-/*slider*/
-
-#slider {
-  display: none;
-}
-
 
 
 /*ABOUT SECTION*/
@@ -501,23 +585,74 @@ h5 {
   grid-area: abtUs;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "abt" "info";
-  padding: 30px;
+  grid-template-areas: "abt" "info" "social";
+  padding: 0px 30px 120px 30px;
   margin: 0px;
+  /*background: linear-gradient(180deg, #bcee7f 22%, white 5%)*/
 }
 
-#abtWrapper h1 {
+
+
+#social {
+  grid-area: social;
+  display: flex;
+  flex-direction: column;
+}
+
+#abtPic {
+  justify-self: center;
+  grid-area: pic;
+  border-radius: 50%;
+  border: white solid 5px;
+}
+
+#abtHdr {
   grid-area: abt;
   text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 2em;
+  font-family: "Raleway";
+  font-weight: lighter;
+  padding-top: 30px;
+  font-size: 2.5em;
 }
 
-#abtWrapper h2 {
+#sclHdr {
+  color: #bcee7f;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  font-family: "Khula";
+  padding: 30px 0px 0px 0px;
+  font-size: 1.3em;
+  font-weight: bold;
+  justify-content: center;
+}
+
+#social a {
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  color: #797979;
+}
+
+#social a:hover{
+  color: #bcee7f;
+}
+
+
+#abtWrapper p {
   grid-area: info;
   text-align: center;
+  padding-top: 30px;
+  letter-spacing: .5px;
+  line-height: 1.7em;
+  color: #797979;
+  font-weight: bold;
+  font-size: 1.4em;
 }
+
+
+
+
 
 
 /*FOOTER*/
@@ -538,19 +673,76 @@ h5 {
   justify-self: center;
 }
 
+#hrs th {
+  padding: 0px 20px 10px 0px;
+}
+
+
+
+
+
+
+/*slideshow*/
+
+#slider {
+  grid-area: slider;
+  width: 100%;
+  height: 400px;
+  display: grid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "prevBtn nextBtn";
+  box-sizing: border-box;
+  margin: 50px 0px;
+}
+
+#slider>.btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#nextImg {
+  grid-area: nextBtn;
+  align-self: center;
+  justify-self: end;
+}
+
+#prevImg {
+  grid-area: prevBtn;
+  align-self: center;
+}
+
+
+
+
 
 /*footer grid Defs*/
 
 #hdr {
   font-weight: bold;
+  font-size: 2em;
   grid-area: hdr;
   text-align: center;
-  padding: 10px 0;
+  padding: 30px 0;
 }
 
 #nmbr {
   text-align: center;
   grid-area: nmbr;
+  padding-bottom: 30px;
+}
+
+#nmbr a {
+  font-size: 2em;
 }
 
 #addy {
@@ -559,8 +751,15 @@ h5 {
 }
 
 #addy h1 {
-  padding: 10px 0;
+  padding: 30px 0;
+  font-size: 2em;
   font-weight: bold;
+}
+
+#addy p {
+  padding-bottom: 30px;
+  font-size: 1.4em;
+  line-height: 1.3em;
 }
 
 #hrs {
@@ -570,8 +769,13 @@ h5 {
 }
 
 #hrs h1 {
-  padding: 10px 0;
+  padding: 30px 0;
+  font-size: 2em;
   font-weight: bold;
+}
+
+#hrs tbody {
+  font-size: 1.4em;
 }
 
 #copy {
@@ -581,14 +785,17 @@ h5 {
   text-align: center;
 }
 
-
 /*FULL LAYOUT*/
 
 #wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "navvy" "main" "abtUs" "prices" "ftr";
+  grid-template-areas: "navvy" "main" "abtUs" "prices" "slider" "ftr";
 }
+
+
+
+
 
 
 
@@ -603,13 +810,12 @@ h5 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1025px) {
   .handle,
-  .menuHideHdr,
-  #logoSm {
+  .menuHideHdr{
     display: none;
   }
   /*NAVIGATION*/
   .navWrapper {
-    grid-template: "logo nav" minmax(60px, auto) / 1fr 1fr;
+    grid-template: "logo nav" minmax(100px, auto) /1fr 1fr;
   }
 
   #navList {
@@ -618,25 +824,47 @@ h5 {
     grid-template-areas: "about menu contact"
   }
 
+  #abtHdr {
+    text-align: start;
+  }
+
   #logoLg {
     display: block;
-    width: 50%;
     height: auto;
     justify-content: center;
-    padding: 10px 25px;
+    padding: 0px 10px;
   }
+
+  /*food menu*/
+  /*abt section*/
+  #abtWrapper {
+    /*background: linear-gradient(180deg, #bcee7f 31%, white 5%);*/
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "abt social" "info social";
+  }
+
+  #abtWrapper p {
+    text-align: start;
+  }
+
+
   /*SLIDESHOW*/
   #slider {
-    display: none;
+    height: 600px;
+    margin: 100px 0px;
   }
 
   /*FULL LAYOUT*/
   #wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "navvy" "main" "abtUs" "prices" "ftr";
+    grid-template-areas: "navvy" "main" "abtUs" "prices" "slider" "ftr";
   }
 }
+
+
+
+
 
 
 
@@ -668,23 +896,21 @@ h5 {
 
   #navList {
     display: grid;
-    grid-template: "menu about contact" minmax(100px, auto) / 1fr 1fr 1fr;
+    padding: 10px 0px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "menu contact about";
   }
 
   .navWrapper {
-    padding: 0px 200px;
-    grid-template: "logo nav" minmax(100px, auto) /1fr 1fr;
+    grid-template: "logo logo . nav" minmax(100px, auto) /1fr 1fr 1fr 1fr;
     height: 100px;
-  }
-
-  #logoSm {
-    display: none;
+    width: 100%;
   }
 
   #logoLg {
     display: block;
     width: auto;
-    height: 70%;
+    height: 78%;
   }
 
   .handle {
@@ -698,14 +924,24 @@ h5 {
   /*ABOUT SECTION*/
   #abtWrapper {
     padding: 20px 200px;
+    padding-bottom: 150px;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "abt social" "info social";
+    /*background: linear-gradient(180deg, #bcee7f 213px, white 5%)*/
+  }
+  #abtHdr {
+    text-align: start;
   }
 
+  #abtWrapper p{
+    text-align: start;
+  }
 
   /*slideshow*/
   #slider {
     grid-area: slider;
     width: 100%;
-    height: 600px;
+    height: 700px;
     display: grid;
     background-size: cover;
     background-repeat: no-repeat;
@@ -713,8 +949,7 @@ h5 {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "prevBtn nextBtn";
     box-sizing: border-box;
-    /*border: solid white 5px; */
-    box-shadow: 6px 3px 3px black;
+    margin: 170px 0px 200px 0px;
   }
 
   #slider>.btn {
@@ -753,11 +988,15 @@ h5 {
     padding: 30px 0;
   }
 
+  #innerMenu img {
+    width: 510px;
+  }
+
   #innerMenu {
     grid-area: inner;
     display: grid;
     grid-template-areas: repeat( 5, 1fr);
-    grid-template-areas: ". . h1 . ." "apps apps . entree entree" "rice rice . entree entree" "noodles noodles . curry curry" ". drinks drinks drinks .";
+    grid-template-areas: ". logo logo logo ." "apps apps . entree entree" "rice rice . entree entree" "noodles noodles . curry curry" ". drinks drinks drinks .";
     background-color: #bcee7f;
     padding: 20px;
     text-align: center;
@@ -779,13 +1018,12 @@ h5 {
   #wrapper {
     display: grid;
     grid-template-columns: 200px 1fr 200px;
-    grid-template-areas: "navvy navvy navvy" "main main main" "abtUs abtUs abtUs" ". slider ." "prices prices prices" "ftr ftr ftr";
+    grid-template-areas: "navvy navvy navvy" "main main main" "abtUs abtUs abtUs" "prices prices prices" ". slider ." "ftr ftr ftr";
   }
 }
 
 
 footer,
-#abtWrapper,
-#menuSec {
+#abtWrapper {
   font-family: 'Poiret One', sans-serif;
 }
