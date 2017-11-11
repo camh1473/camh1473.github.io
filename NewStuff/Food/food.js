@@ -1,5 +1,10 @@
   "use strict";
 
+
+
+
+
+
   // Menu Icon Animation
   var wrapperMenu = document.querySelector(".handle");
 
@@ -8,6 +13,11 @@
       wrapperMenu.classList.toggle("open");
     });
   }
+
+
+
+
+
 
   // show and hide navList
 
@@ -19,21 +29,9 @@
       showMe.classList.toggle("hide"));
   }
 
-  // smooth scrolling navList
-  var menu = document.getElementById('menu');
-  menu.addEventListener = ("click",scrollMe())
-  var about = document.getElementById('about');
-  about.addEventListener = ("click",scrollMe())
-  var contact = document.getElementById('contact');
-  contact.addEventListener = ("click",scrollMe())
-  
-// var marginY = 0;
-// var where = 0;
-// var speed = 5;
-function scrollMe(elelmentId){
-  var where = document.getElementById(elelmentId);
-  console.log(where);
-  }
+ 
+
+
 
 
   // Map Initialization
@@ -48,6 +46,12 @@ function scrollMe(elelmentId){
       map: map
     });
   }
+
+
+
+
+
+
 
   // slider definitions
   var next = document.getElementById("nextImg");
@@ -68,6 +72,8 @@ function scrollMe(elelmentId){
   images[5] = "padPeanut.jpg";
   images[6] = "redCurry.jpg";
 
+
+
   // Change image
   function changeImg() {
     slider.style.backgroundImage = "url('" + images[i] + "')";
@@ -79,6 +85,10 @@ function scrollMe(elelmentId){
     }
     setTimeout("changeImg()", time);
   }
+
+
+
+
 
   // slider buttons
   function buttons() {
@@ -105,44 +115,32 @@ function scrollMe(elelmentId){
   }
 
 
-// // fade
-// var fadeInFrom = 0;
-// var fadeOutFrom = 10;
-
-// function fadeIn(slider){
-//   slider.style.display = "grid";
-//   var newSetting = fadeInFrom /10;
-//   slider.style.opacity =  newSetting;
-
-//   fadeInFrom++;
-//   if(fadeInFrom == 10) {
-//   slider.style.opacity = 1;
-//   clearTimeout(loopTimer);
-//   fadeInFrom = 0;
-//   return false;
-//   }
-
-//   var loopTimer = setTimeout("fadeIn(/"+slider+"/)",50);
-// }
-
-// function fadeOut(slider){
-//   // slider.style.display = "grid";
-//   var newSetting = fadeInFrom /10;
-//   slider.style.opacity =  newSetting;
-
-//   fadeOutFrom--;
-//   if(fadeInFrom == 0) {
-//   slider.style.opacity = 0;
-//   slider.style.display = "none";
-//   clearTimeout(loopTimer);
-//   fadeInFrom = 10;
-//   return false;
-//   }
 
 
-//   var loopTimer = setTimeout("fadeOut(/"+slider+"/)",50);
 
-// }
+
+
+
+
+
+
+ // smooth scrolling navList
+ 
+   var test = document.getElementById('abtWrapper');
+
+
+
+  var about = document.getElementById('about');
+  // about.addEventListener = ("click",);
+  var contact = document.getElementById('contact');
+  // contact.addEventListener = ("click",()=>{alert("hit")});
+
+
+
+
+
+
+
 
 
   //  FUNCTION CALLS

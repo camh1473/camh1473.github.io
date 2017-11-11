@@ -101,6 +101,10 @@ video {
 
 
 
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -154,6 +158,10 @@ table {
 
 
 
+
+
+
+
 /*****MOBILE STYLING******/
 
 nav ul li {
@@ -165,10 +173,10 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: #383838;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 nav a:hover {
@@ -184,19 +192,24 @@ nav a:hover {
 
 
 
+
+
 /*NAV ALIGNMENT*/
 
 .navWrapper {
+  z-index: 1;
+  width: 100%;
   position: fixed;
   background-color: #bcee7f;
   grid-area: navvy;
-  padding: 0px;
-  margin: 0;
+  height: 65px;
   font-family: 'Poiret One', sans-serif;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: "logo logo logo logo handle" ". . nav . .";
+  grid-template-areas: "logo logo logo logo handle" "nav nav nav nav nav";
+  box-shadow: 0px 0px 2px grey;
 }
+
 
 
 
@@ -221,11 +234,8 @@ nav a:hover {
 
 #navLogo {
   width: 100%;
-  padding: 0px;
+  padding: 15px 0 0 10px;
   grid-area: logo;
-  text-align: center;
-  padding-top: 5px;
-  margin-top: 10px;
 }
 
 
@@ -235,18 +245,25 @@ nav a:hover {
 
 #logoLg {
   display: block;
-  width: 78%;
+  width: 200px;
   height: auto;
   justify-content: center;
-  padding: 0px 0px 10px 25px;
 }
 
 #navList {
-  overflow: hidden;
+  /*overflow: hidden;*/
+  height: auto;
+  background-color: #bcee7f;
+  width: 100%;
   padding: 0;
   transition: max-height 0.4s;
   grid-area: nav;
+
 }
+
+
+
+
 
 
 
@@ -257,9 +274,6 @@ nav a:hover {
 /*Nav icon*/
 
 #handler {
-  align-self: center;
-  justify-self: center;
-  /*border: red solid 1px;*/
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -269,17 +283,15 @@ nav a:hover {
 }
 
 .handle {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   box-sizing: border-box;
   cursor: pointer;
   grid-area: handle;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 330ms ease-out;
-  /*border: 1px black solid;*/
-  vertical-align: center;
+  transition: transform 430ms ease-out;
 }
 
 .handle.open {
@@ -298,7 +310,7 @@ nav a:hover {
 }
 
 .line-menu.start {
-  transition: transform 330ms cubic-bezier(.54, -.81, .57, .57);
+  transition: transform 430ms cubic-bezier(.54, -.81, .57, .57);
   transform-origin: right;
 }
 
@@ -308,13 +320,17 @@ nav a:hover {
 
 .line-menu.end {
   align-self: flex-end;
-  transition: transform 330ms cubic-bezier(.54, -.81, .57, .57);
+  transition: transform 430ms cubic-bezier(.54, -.81, .57, .57);
   transform-origin: left;
 }
 
 .open .line-menu.end {
   transform: rotate(-90deg) translateX(-3px);
 }
+
+
+
+
 
 
 
@@ -358,6 +374,10 @@ nav a:hover {
 
 
 
+
+
+
+
 /*MENU Parralax SECTION*/
 
 #innerMenu ul {
@@ -367,6 +387,7 @@ nav a:hover {
 #innerMenu ul li p {
   font-family: "sans-serif";
   font-weight: lighter;
+  color: #404040;
 }
 
 #appScroll {
@@ -378,7 +399,6 @@ nav a:hover {
   display: grid;
   width: 100%;
   align-items: center;
-  /*position: fixed;*/
 }
 
 #hdrEntree {
@@ -467,9 +487,11 @@ nav a:hover {
 
 
 
+
+
+
+
 /*                  Food Menu Styling*/
-
-
 
 .menuHide {
   background-repeat: no-repeat;
@@ -524,7 +546,7 @@ nav a:hover {
 #innerMenu p {
   /*font-family: "Montserrat";*/
   padding-bottom: 15px;
-   color: #404040;
+  color: #fff;
 }
 
 #innerMenu {
@@ -577,6 +599,10 @@ nav a:hover {
   font-size: 2em;
   padding: 10px;
 }
+
+
+
+
 
 
 /*ABOUT SECTION*/
@@ -634,7 +660,7 @@ nav a:hover {
   color: #797979;
 }
 
-#social a:hover{
+#social a:hover {
   color: #bcee7f;
 }
 
@@ -655,6 +681,10 @@ nav a:hover {
 
 
 
+
+
+
+
 /*FOOTER*/
 
 #footSec {
@@ -663,6 +693,10 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "hdr" "nmbr" "addy " "map" "hours" "copy";
+}
+
+#copy p{
+  padding: 10px;
 }
 
 #map {
@@ -676,6 +710,10 @@ nav a:hover {
 #hrs th {
   padding: 0px 20px 10px 0px;
 }
+
+
+
+
 
 
 
@@ -720,6 +758,10 @@ nav a:hover {
   grid-area: prevBtn;
   align-self: center;
 }
+
+
+
+
 
 
 
@@ -785,6 +827,10 @@ nav a:hover {
   text-align: center;
 }
 
+
+
+
+
 /*FULL LAYOUT*/
 
 #wrapper {
@@ -806,36 +852,46 @@ nav a:hover {
 
 
 
+
+
+
+
 /********iPads - ipad PRO*****/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1025px) {
   .handle,
-  .menuHideHdr{
+  .menuHideHdr {
     display: none;
   }
   /*NAVIGATION*/
   .navWrapper {
     grid-template: "logo nav" minmax(100px, auto) /1fr 1fr;
+    height: 85px;
+    width: 100%;
   }
 
   #navList {
+    height: 50px;
     display: grid;
     grid-template-columns: repeat( 3, 1fr);
     grid-template-areas: "about menu contact"
   }
 
-  #abtHdr {
-    text-align: start;
+
+  #navLogo {
+
+    padding: 25px 0 0 30px;
   }
 
   #logoLg {
     display: block;
-    height: auto;
     justify-content: center;
-    padding: 0px 10px;
   }
 
   /*food menu*/
+  #innerMenu ul li p {
+    padding: 0px 30px;
+  }
   /*abt section*/
   #abtWrapper {
     /*background: linear-gradient(180deg, #bcee7f 31%, white 5%);*/
@@ -843,6 +899,9 @@ nav a:hover {
     grid-template-areas: "abt social" "info social";
   }
 
+  #abtHdr {
+    text-align: start;
+  }
   #abtWrapper p {
     text-align: start;
   }
@@ -861,6 +920,10 @@ nav a:hover {
     grid-template-areas: "navvy" "main" "abtUs" "prices" "slider" "ftr";
   }
 }
+
+
+
+
 
 
 
@@ -897,7 +960,7 @@ nav a:hover {
   #navList {
     display: grid;
     padding: 10px 0px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "menu contact about";
   }
 
@@ -907,10 +970,14 @@ nav a:hover {
     width: 100%;
   }
 
+
+  #navLogo {
+    padding: 27px 0 0 20px;
+  }
+
   #logoLg {
-    display: block;
+    height: 50px;
     width: auto;
-    height: 78%;
   }
 
   .handle {
@@ -933,7 +1000,7 @@ nav a:hover {
     text-align: start;
   }
 
-  #abtWrapper p{
+  #abtWrapper p {
     text-align: start;
   }
 
