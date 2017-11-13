@@ -1,21 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+//components
+import Comment from './components/comment'
+
+export default class App extends Component {
+
+
   render() {
+  	const title = "To Do Task";
+  	const edit = function() {
+		alert('editing');
+	}
+	const remove = function() {
+		alert('deleting');
+	}
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+      <Comment edit={edit} title={title}>Hello there Cam</Comment>
+      <Comment edit={edit} remove={remove} title={title}>New Task</Comment>
+      <Comment edit={edit} remove={remove} title={title}>Third Task</Comment>
+      <Comment edit={edit} remove={remove} title ={title}>4th task</Comment>
+
+
+      
       </div>
     );
   }
 }
-
-export default App;
