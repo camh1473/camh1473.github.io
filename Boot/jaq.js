@@ -18,20 +18,23 @@ $(document).ready(function() {
         console.log(this.scrollTop() );
       });
 
+      window.addEventListener("scroll", function(){console.log(this.scrollTop() );})
+
 // function example() {
 //     var tempScrollTop = window.scrollTop();
 //     console.log("Scroll from Top: " + tempScrollTop.toString());
 // };
     
 function setBindings() {
-  $('nav a').click(function(e){
+  $('nav li a').on("click",function(e){
     e.preventDefault();
+    
     var sectionPart = "#" + e.currentTarget.id + "Part";
 
 
-    $('html body').animate({
-      scrollTop: $(sectionPart).offset().top
-    }, 1000)
+    // $('html body').animate({
+    //   scrollTop: $(sectionPart).offset().top
+    // }, 1000)
     
   })
 
