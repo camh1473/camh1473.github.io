@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html class="no-js" lang="">
 
 <head>
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700|Merriweather|Open+Sans" rel="stylesheet">
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Libraries CSS Files -->
@@ -76,7 +76,7 @@
                     <div class="col-lg-6 content order-lg-2 order-2">
                         <h2 class="title">A little About Gino</h2>
                         <p>
-                            Gino Goss is an Award winning Producer/Artist, Trumpeter, Latin percussionist Gino Goss decided in 2008 to embark on his own, forming Gino Goss and Jammajazz, producing a unique and exciting sound that is all his own. In 2009, he released is debut CD entitle ALMOST FAMOUS to glowing reviews. Various cuts from this freshman CD can be heard globally.
+                            Gino Goss is an Award winning Producer/Artist, Trumpeter, Latin percussionist Gino Goss decided in 2008 to embark on his own, forming Gino Goss and Jammajazz, producing a unique and exciting sound that is all his own. In 2009, he released is debut CD entitled ALMOST FAMOUS to glowing reviews. Various cuts from this freshman CD can be heard globally.
                         </p>
                         <div class="icon-box wow fadeInUp">
                             <div class="icon"><i class="fa fa-shopping-bag"></i></div>
@@ -115,14 +115,16 @@
                 </div>
             </div>
             <div class="container-fluid mid wow fadeIn">
+<div class="container">
                 <div class=" row">
-                    <div class="col-md-6 col-lg-6 order-lg-2 order-2 section-header pt-5">
+                    <div class="col-md-6 col-lg-6 order-lg-2 order-1 section-header pt-5">
                         <h3 class="section-title">Entrigue Magazine</h3>
                         <p class="section-description">Entrigue Magazine is a unique publication geared toward positive, entertaining and intriguing lifestyles. </p>
                     </div>
-                    <div class="wow entrigueMag fadeInRight col-md-6 col-lg-6 order-lg-1 order-1 section-header">
+                    <div class="wow entrigueMag fadeInRight col-md-6 col-lg-6 order-lg-1 order-2 section-header">
                     </div>
                 </div>
+            </div>
             </div>
             <div class="container wow fadeIn last">
                 <div class="row">
@@ -143,14 +145,14 @@
         <section id="call-to-action">
             <div class="container wow fadeIn">
                 <div class="row">
-                    <div class="col-lg-9 text-center text-lg-left">
+                    <div class="col-12 text-center text-lg-left">
                         <h3 class="cta-title">Music</h3>
                         <p class="cta-text">Gino Goss Music can be found on SoundCloud and iTunes.</p>
                           <iframe id="player" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/3251841&amp;color=%23ff5500&amp;auto_play=false&amp;single_active=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
 
 
                     </div>
-                    <div class="col-lg-3 cta-btn-container text-center">
+                    <div class="col-12 cta-btn-container text-center">
                         <a class="cta-btn align-middle" href="#">Call To Action</a>
 
                     </div>
@@ -176,23 +178,27 @@
                   
                     <div class="col-lg-6 col-md-12">
                         <div class="form">
-                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div style="display:none;" id="thankyou_message"> <h2>Your message has been sent. Thank you!</h2></div>
                             <div id="errormessage"></div>
-                            <form action="" method="post" role="form" class="contactForm">
+                            <form action="contact.php" method="post" role="form" id="gform" class="contactForm">
                                 <div class="form-group">
+                                    <label for="name">Name</label>
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="email">E-mail</label>
                                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="subject">Subject</label>
                                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Write Message Here"></textarea>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="text-center">
@@ -205,11 +211,11 @@
                   
                         <div class="social-links text-center pt-5">
                             <h4>Follow Gino Goss on Social Media</h4>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://twitter.com/GinoGoss" class="twitter"><i class="fa fa-twitter"></i></a>
                             <a href="https://www.facebook.com/ginogoss" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
                             <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -248,7 +254,7 @@
     <script src="lib/superfish/hoverIntent.js"></script>
     <script src="lib/superfish/superfish.min.js"></script>
     <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
+    <!-- <script src="contactform/contactform.js"></script> -->
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
     <script src="js/plugins.js"></script>
