@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Weather App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <!-- Add your site or application content here -->
+    <h1>Current Weather Forecast</h1>
+    <form action="POST">
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="city-search">City Name</label>
+                    <input type="text" id="city-search" placeholder="e.g. Austin, TX" required>
+                </li>
+                <li>
+                    <label for="latitude">Latitude</label>
+                    <input type="text" id="latitude" placeholder="e.g. 42.9150747">
+                </li>
+                <li>
+                    <label for="longitude">Longitude</label>
+                    <input type="text" id="longitude" placeholder="e.g. -77.784323">
+                </li>
+            </ul>
+        </fieldset>
+        <button>Get Weather</button>
+    </form>
+<div>
+    <ul>
+        <li id="city"></li>
+        <li id="condition"></li>
+        <li id="windSpeed"></li>
+        <li class="button" id="temp"></li>
+    </ul>
+    </div>
+
+    <p id="data"></p>
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Map API -->
+
+    <!--   <script src="https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyBPlRDCucJwL2FYNcdqbatrGcHIB07ZY14"></script> -->
+
+    
+</body>
+
+</html>

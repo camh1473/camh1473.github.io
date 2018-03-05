@@ -94,51 +94,8 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  // Porfolio filter
-  // $("#portfolio-flters li").click ( function() {
-  //   $("#portfolio-flters li").removeClass('filter-active');
-  //   $(this).addClass('filter-active');
-
-  //   var selectedFilter = $(this).data("filter");
-  //   $("#portfolio-wrapper").fadeTo(100, 0);
-
-  //   $(".portfolio-item").fadeOut().css('transform', 'scale(0)');
-
-  //   setTimeout(function() {
-  //     $(selectedFilter).fadeIn(100).css('transform', 'scale(1)');
-  //     $("#portfolio-wrapper").fadeTo(300, 1);
-  //   }, 300);
-  // });
-
-  // // jQuery counterUp
-  // $('[data-toggle="counter-up"]').counterUp({
-  //   delay: 10,
-  //   time: 1000
-  // });
-
-
-  //Google Map
-  var get_latitude = $('#google-map').data('latitude');
-  var get_longitude = $('#google-map').data('longitude');
-
-  function initialize_google_map() {
-    var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-    var mapOptions = {
-      zoom: 14,
-      scrollwheel: false,
-      center: myLatlng
-    };
-    var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map
-    });
-  }
-  google.maps.event.addDomListener(window, 'load', initialize_google_map);
-
 // custom code
-// LighterBox
-$(".lighterbox").lighterbox({ overlayColor : "white" });
+
 
 // Contact Form
 
