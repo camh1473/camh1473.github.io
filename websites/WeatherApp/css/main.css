@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,8 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -36,6 +40,8 @@ html {
     text-shadow: none;
 }
 
+
+
 /*
  * A better looking default horizontal rule
  */
@@ -48,6 +54,8 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -64,6 +72,8 @@ video {
     vertical-align: middle;
 }
 
+
+
 /*
  * Remove default fieldset styles.
  */
@@ -74,6 +84,8 @@ fieldset {
     padding: 0;
 }
 
+
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -81,6 +93,8 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -93,37 +107,71 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*body{
+
+
+body > div{
     background-image: url("../img/clouds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    /*color: #fff;*/
     
-}*/
-
-ul {
-    list-style: none;
 }
 
-div, h1, form {
+
+div {
     text-align: center;
-    /*align-items: center;*/
 }
 
-.button{
+.button {
     cursor: pointer;
     border: solid 1px grey;
-    /*border-radius: 5%;*/
+    border-radius: 45px;
     background-color: #04E8D3;
-    /*margin: 0 30em;*/
-
 }
 
+.wrapper {
+    margin: 0 auto;
+    width: 30%;
+    padding: 30px;
+    display: grid;
+    grid-template-areas: "head head" "city city" "temp temp" "icon ." "status wind";
+    border: 1px black solid;
+    border-radius: 45px;
+}
 
+#header {
+    grid-area: head
+}
 
+#city {
+    grid-area: city;
+}
+
+#temp {
+    grid-area: temp;
+}
+
+#icon {
+    grid-area: icon;
+    /*background-image: url("../weather/cloudy.svg");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+}
+
+#condition {
+    grid-area: status
+}
+
+#windSpeed {
+    grid-area: wind
+}
 
 
 
@@ -139,6 +187,7 @@ div, h1, form {
    Helper classes
    ========================================================================== */
 
+
 /*
  * Hide visually and from screen readers
  */
@@ -146,6 +195,8 @@ div, h1, form {
 .hidden {
     display: none !important;
 }
+
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -167,8 +218,11 @@ div, h1, form {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
+
+
 
 /*
  * Extends the .visuallyhidden class to allow the element
@@ -189,6 +243,8 @@ div, h1, form {
     white-space: inherit;
 }
 
+
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -196,6 +252,8 @@ div, h1, form {
 .invisible {
     visibility: hidden;
 }
+
+
 
 /*
  * Clearfix: contain floats
@@ -211,13 +269,17 @@ div, h1, form {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -230,11 +292,13 @@ div, h1, form {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
+
 
 /* ==========================================================================
    Print styles.
@@ -247,7 +311,8 @@ div, h1, form {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
@@ -270,7 +335,6 @@ div, h1, form {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -289,7 +353,6 @@ div, h1, form {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
