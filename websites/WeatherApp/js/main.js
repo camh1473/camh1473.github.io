@@ -10,7 +10,7 @@ $(document).ready(function() {
     $("#city").css("font-size", "1.5em");
     $("#temp").css("font-size", "3em");
     // $("#icon").css("backgroundColor", "red")
-    $("#icon").css('background-image', 'url('+/weather/sun.svg+')');
+
     // -------------------------End Styling-------------------
     // ---------------------GEOLOCATION COORDS---------------
     if (navigator.geolocation) {
@@ -46,9 +46,11 @@ $(document).ready(function() {
                 console.log(kTemp);
                 console.log(api);
                 console.log(weatherType);
+
+
                 // 		-------------placing values from OpenWeather JSON into html thru JQ DOM---------------
                 $("#city").html(city);
-                $("#condition").html(condition);
+                $("#condition").html(weatherType + " with " + condition);
                 $("#windSpeed").html(Math.round(windSpeed) + " mph winds");
                 $("#temp").html(Math.round(fTemp) + " &#8457");
 
@@ -64,15 +66,20 @@ $(document).ready(function() {
                     }
                 });
                 // ------------------end Temp Conversion-------------
+                if (weatherType === "Clouds") {
+                    $("#icon").css('background-image', 'url(cloudy.svg)');
+                } 
+                else if (weatherType === "Drizzle" || weatherType === "Rain" || weatherType === "Thunderstorm") {
+                    $("#icon").css("background-image", "url(rain.svg)");
+                }
+                else if (weatherType === "Clear") {
+                	$("#icon").css("background-image", "url(sun.svg)")
+                } 
+                else{
+                    $("#icon").css('background-image', 'url(sun.svg)');
+                };
             });
-            if (weatherType === "Clouds") {
-                console.log(CLEAR);
-                // $("#icon").css("background-image", "url('../weather/sun.svg')")
-                $("#icon").css("backgroundColor", "blue")
-            } 
-            else {
-            	$("#icon").css("backgroundColor", "white")
-            };
+
             // 			----------------------------end JSON-------------------
         });
 
